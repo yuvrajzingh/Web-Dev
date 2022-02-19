@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration-style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div id="background">
+        <div id="main">
+            <div id="title">
+                <h1>REGISTRATION FORM</h1>
+            </div>
+
+            <div id="control">
+                <label for="name-label">First Name</label>
+                <input type="text" id="name-label" name = "name" required placeholder="Enter your first name">
+            </div>
+            <br>
+            <div id="control">
+                <label for="name-label">Middle Name</label>
+                <input type="text" id="name-label" name = "name" required placeholder="Enter your middle name">
+            </div>
+            <br>
+            <div id="control">
+                <label for="name-label">Last Name</label>
+                <input type="text" id="name-label" name = "name" required placeholder="Enter your last name">
+            </div>
+            <br>
+            <div id="control">
+                <label for="date">Date</label>
+                <input type="date" id="name-label" name = "date" >
+            </div>
+            <br>
+            <div id="control">
+                <label for="dropdown">Course</label>
+
+                <select name="course" id="dropdown">
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="M.B.A">MBA</option>
+                    <option value="M.B.B.S">MBBS</option>
+                    <option value="L.L.B">LLB</option>
+                </select>
+            </div>
+            <br>
+            <div id="control">
+                <fieldset>
+                    <legend> GENDER </legend>    
+                 <input type="radio" id="gender" name="male">MALE
+                  <br> <input type="radio" id="gender" name="female">FEMALE
+                  <br>
+                 <input type="radio" id="gender" name="female">OTHER
+                  <br>
+            
+                </fieldset>
+            </div>
+            <br>
+            <div id="control">
+                <label for="address">ADDRESS</label><br>
+                <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your address"></textarea>
+            </div>
+            <br>
+            <div id="control">
+                <label for="email">E-MAIL</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+            <br>
+
+            <button type="submit" value="submit">Submit</button>
+    
+
+        </div>
+    </div>
+</body>
+</html>
