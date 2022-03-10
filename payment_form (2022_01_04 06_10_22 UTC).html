@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT FORM</title>
+</head>
+<body>
+    <form action="">
+        <h1>payment form</h1>  
+        <h2>contact information</h2>
+        <p>Name: <input type="text" name="name" required></p>    <!--"required" written so that user wont be able to submit the form without filling the name -->
+      <fieldset>          <!--fieldset is used to wrap things up in a box-->
+        <legend>Gender</legend>      <!-- legend is used to name the box of wrapped things-->
+        <p>male <input type="radio" name="gender" id="">
+        female <input type="radio" name="gender" id=""></p>
+      </fieldset>
+      <p>Address: <textarea name="address" id="address" cols="20" rows="5"></textarea></p>
+      <p>EMAIL: <input type="email" name="email" id="email"></p>
+      <p>pincode: <input type="number" name="pincode" id="pincode"></p>
+      <br>
+      <hr>
+      <h2>PAYMENT INFO</h2>
+      <p>Card types:
+          <select name="cardtype" id="cardtype">
+              <option value="">-SELECT A CARD TYPE-</option>      <!--"value" is empty so that the value does not go to the server as its not a card type -->
+              <option value="visa">VISA</option>
+              <option value="mastercard">MASTERCARD</option>
+              <option value="rupay">RUPAY</option>
+
+          </select>
+      </p>
+      <p>
+          card number : <input type="number" name="cardnumber" id="cardnumber">
+      </p>
+      <p>
+          expiration date : <input type="date" name="expirydate" id="expirydate">
+      </p>
+      <p>
+          CVV : <input type="password" name="cvv" id="cvv">
+      </p>
+      <input type="submit" value="PAY NOW">
+    </form>
+
+    
+</body>
+</html>
