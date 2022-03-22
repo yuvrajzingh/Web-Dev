@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVAScript</title>
+    <link rel="stylesheet" href="tech-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <header><h2>JS Documentation</h2></header>
+        <div class="navs">
+            <a  href="#introduction" class="navlinks">Introduction</a>
+            <a href="#prerequisite_knowledge" class="navlinks">Prerequisite Knowledge</a>
+            <a href="#js_comments" class="navlinks">JS Comments</a>
+            <a href="#js_variables" class="navlinks">JS Variables</a>
+            <a href="#js_datatypes" class="navlinks">JS Datatypes</a>
+            <a href="#js_functions" class="navlinks">JS Function</a>
+        </div>
+    </nav>
+    <div id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>An Introduction to JavaScript</header>
+            <br>
+            <article>
+                <h2>What is JavaScript?</h2>
+                <br>
+            <p>JavaScript was initially created to “make web pages alive”.</p>
+            <p>The programs in this language are called scripts. They can be written right in a web page’s HTML and run automatically as the page loads.</p>
+            <p>Scripts are provided and executed as plain text. They don’t need special preparation or compilation to run.</p>
+            <p>In this aspect, JavaScript is very different from another language called <a href=""><span style="color:blue">Java</span></a>.</p>
+            
+            <div>
+                <h3>Why is it called JavaScript?</h3>
+                <p>When JavaScript was created, it initially had another name: “LiveScript”. But Java was very popular at that time, so it was decided that positioning a new language as a “younger brother” of Java would help. <br>
+                But as it evolved, JavaScript became a fully independent language with its own specification called ECMAScript, and now it has no relation to Java at all.</p>
+            </div>
+
+            </article>
+        </section>
+
+        <section class="main-section" id="prerequisite_knowledge">
+            <header>Prerequisite Knowledge</header>
+            <article>
+                <p>This guide assumes you have the following basic background:</p>
+
+            <ul>
+                <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+                <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
+            </ul>
+
+            </article>
+        </section>
+
+        
+
+        <section class="main-section" id="js_comments">
+            <header>JavaScript Comments</header>
+            
+            <article>
+
+                <p>JavaScript comments can be used to explain JavaScript code, and to make it more readable.</p>
+                <p>JavaScript comments can also be used to prevent execution, when testing alternative code.</p>
+
+              <h3>Single Line Comments</h3>
+              <p>Single line comments start with <span style="color:green">//</span>. <br>
+              Any text between <span style="color:green">//</span> and the end of the line will be ignored by JavaScript(will not be executed). <br>
+              This example uses a single-line comment before each code line:  </p><br>
+
+             <div>
+              <h4>Example</h4>
+
+        <code>
+            <div>
+                <span style="color:green">// Change heading:</span><br>
+                document.getElementById("myH").innerHTML = <span style="color:red">"My First Page"</span>;
+            </div>
+        </code>
+        </div>
+
+        <h3>Multi-line Comments</h3>
+
+        <p>Multi-line comments start with <span style="color:green">/*</span> and end with <span style="color:green">*/</span>. <br>
+        Any text between <span style="color:green">/*</span> and <span style="color:green">*/</span> will be igonred by JavaScript. <br>
+        </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="js_variables">
+            <header>JavaScript Variables</header>
+
+            <article>
+                <p>there are three ways to declare a JavaScript variables:</p>
+                <ul>
+                    <li>Using <span style="color:red">var</span></li>
+                    <li>Using <span style="color:red">let</span></li>
+                    <li>Using <span style="color:red">const</span></li>
+                </ul>
+                <h3>Variables</h3>
+                <p>Variables are containers for storing data (values).</p>
+                <p>In this example, <span>x</span>, <span>y</span>, and <span>z</span>, are varibles, declared with the <span>var</span> keyword:</p>
+                <br>
+                
+                <div>
+                    <h4>Example</h4>
+                    <code>
+                        <div>
+                            <span style="color:blue">var</span> x = <span style="color:red">5</span>;<br>
+                            <span style="color:blue">var</span> y = <span style="color:red">6</span>;<br>
+                            <span style="color:blue">var</span> z = x + y;
+                        </div>
+                    </code>
+                </div>
+                <br>
+    
+                <p>From the above example you can expect:</p>
+                <ul>
+                    <li>x stores the value 5</li>
+                    <li>y stores the value 6</li>
+                    <li>z stores the value 11</li>
+                </ul>
+            </article>
+        
+        </section>
+
+        <section class="main-section" id="js_datatypes">
+            <header>The Concept of Data Types</header>
+
+            <article>
+                <p>
+                    In programming, data types is an important concept. <br>
+                    To be able to operate on variables, it is important to know something about the type. <br>
+                     
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="js_functions">
+            <header>JavaScript Functions</header>
+
+            <article>
+                <p>
+                    A JavaScript function is a block of code designed to perform a particular task. <br>
+                    A JavaScript function is executed when "something" invokes it (call it).
+                </p>
+                <br>
+    
+                <div>
+                    <h4>Example</h4>
+                    <code>
+                        <div>
+                            <span style="color:blue">function</span> myFuction(p1, p2) { <br>
+                                <span style="color:blue">return</span>  p1 * p2; <span style="color:green">//The finction returns the product of p1 and p2</span>
+                            }
+                        </div>
+                    </code>
+                </div>
+    
+                <h3>Function Invocation</h3>
+    
+                <p>
+                    The code inside the fuction will execute when "something" <b>invokes</b>(call) the function:
+    
+                    <ul>
+                        <li>When an event ocuurs (when a user clicks a button)</li>
+                        <li>When it is invoked(called) from JavaScript code</li>
+                        <li>Automatically (self invoked)</li>
+                    </ul>
+                </p>
+    
+                <h3>Function Return</h3>
+    
+                <p>
+                    WHen a JavaScript reaches a <span style="color:blue">return </span>statement, the functoin will not stop executing. <br>
+                    If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement. <br>
+                    Functions often compute a <b>return value</b>. The return value is "returned" back to the "caller":
+                </p>
+                <br>
+    
+                <div>
+                    <h4>Example</h4>
+                    <p>Calculate the product of two numbers, and return the result:</p>
+                    <br>
+    
+                    <code>
+                        <div>
+                            <span style="color:blue">let</span> x = myFunction(4, 3); <span style="color:green">// Functtion is caled, return value will end up in x</span><br>
+                            <span style="color:blue">function</span> myFunction(a, b){ <br>
+                            <span style="color:blue">return</span> a * b; <span style="color:green">//Function returns the product of a and b</span> <br>  }
+                        </div>
+                    </code>
+                    <br><br>
+    
+                    <p>The result in c will be:</p>
+                    <code><div>12</div></code>
+                </div>
+            </article>
+        </section>
+
+    </div>
+</body>
+</html>

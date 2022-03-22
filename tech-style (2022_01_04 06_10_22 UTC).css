@@ -1,0 +1,168 @@
+:root{
+    --primary-color: rgb(22, 21, 21);
+    --secondary-color: rgb(107, 107, 107);
+    --overlay-color: rgba(0,0,0,0.7);
+    --overlay-color2:rgba(255, 255, 255, 0.4);     
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: 'catamaran', sans-serif;
+    color: #333;
+}
+
+
+
+a{
+    color: #444;
+    text-decoration: none;
+}
+
+ img{
+    width: 100%;
+}
+
+.main-section{
+    max-width:fit-content;
+    margin: auto;
+    overflow: hidden;
+    padding: 0rem 2rem;
+}
+
+.navbar{
+    position: fixed;
+    max-width: 50%;
+    top: 0;
+    left: 0;
+    border-right:solid;
+    border-color: olivedrab;
+    height: 100%;
+    text-align: center;
+    
+}
+
+.navs{
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    overflow-y: auto;
+    
+}
+
+nav header{
+    margin: 1rem 2rem 2rem 2rem ;
+    
+}       
+
+.navlinks{
+    border-top: 1px solid;
+}
+.navs :last-child{
+    border-bottom: 1px solid;
+}
+
+.main-section{
+    margin:3rem 2rem 3rem 18rem  ;
+}
+
+.main-section header{
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.main-section h3{
+    margin: 1rem 0;
+}
+.main-section ul {
+    margin-top: 1rem;
+}
+
+.main-section div {
+    background-color: rgb(46, 243, 46);
+    border-radius: 10px;
+    padding: 0.5rem ;
+}
+
+.main-section div p{
+    background-color: rgb(253, 242, 224);
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.main-section h4{
+    background-color: rgb(152, 248, 27);
+    border-radius: 6px;
+}
+
+.main-section code div{
+    background-color: rgb(253, 242, 224);
+}
+
+
+@media only screen and (max-width: 615px){
+    /*for mobile phones: 
+    
+    .navbar .navs {
+        border: 1px solid;
+        height: 207px;
+    }
+
+    .navbar {
+        background-color: ghostwhite;
+        position: absolute;
+        top: 0;
+        padding:0 ;
+        margin: 0;
+        width: 100% ;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+
+    }
+
+    #main-doc{
+        position: relative;
+        margin-left: 0;
+        margin-top: 270px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    #main-doc{
+        margin-left: -10px;
+    }
+    code {
+        width:100%;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+    }
+} */
+
+
+.navbar {
+    position: relative;
+   border-right: none;
+   height: 50%;
+   width: 100%;
+}
+
+.navbar header{
+    width:315px;
+    
+}
+
+.navbar .navs {
+    width: 400px;
+}
+
+#main-doc{
+    position: absolute;
+    margin-left: -290px;
+}
