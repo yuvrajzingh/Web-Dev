@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WT Group Project</title>
+    <link rel="stylesheet" href="tech-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="background">
+        <nav class="navbar" id="navbar">
+            <header><h1>JAVA</h1></header>
+            <div class="navs">
+                <a href="#Exceptions" class="navlinks"><h2>Exceptions</h2></a>
+                <a href="#Try" class="navlinks"><h2>Try</h2></a>
+                <a href="#Catch" class="navlinks"><h2>Catch</h2></a>
+                <a href="#Finally" class="navlinks"><h2>Finally</h2></a>
+                <a href="#Throw" class="navlinks"><h2>Throw</h2></a>
+                <a href="#Throws" class="navlinks"><h2>Thows</h2></a>
+                <a href="#USD_Exceptions" class="navlinks"><h2>User Defined Exceptions</h2></a>
+                <a href="#About_Us" class="navlinks"><b>ABOUT US</b></a>
+            </div>
+        </nav>
+        <div id="main-doc">
+            <section class="main-section" id="Exceptions">
+                <header>An Introduction to Exceptions</header>
+                
+                <br>
+                <article>
+                            <h2>Exceptions in Java</h2>
+                            <br>
+                        <p>Exception Handling in Java is one of the effective means to handle the runtime errors so that</p>
+                        <p>the regular flow of the application can be preserved. Java Exception Handling is a mechanism</p>
+                        <p>to handle runtime errors such as ClassNotFoundException, IOException, SQLException,</p>
+                        <p>RemoteException, etc.</p>
+                        
+                        <br>
+                        <div>
+                            <h3>What is an Exception?</h3>
+                            <p>An exception is an unwanted or unexpected event, which occurs during the execution of a program i.e at run time, that disrupts the normal flow of the program’s instructions. Exceptions can be caught and handled by the program. When an exception occurs within a method, it creates an object. This object is called the exception object. It contains information about the exception such as the name and description of the exception and the state of the program when the exception occurred.</p>
+                        </div>
+            
+                        </article>
+                </section>
+            
+                <section class="main-section" id="Try">
+                        <header>Try</header>
+                    <article>
+                            <p>Try : The try block contains set of statements where an exception can occur.</p>
+                            <br>
+                            <div>
+                                <h3>Try</h3>
+                                <p>{<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;// statement(s) that might cause exception <br> }</p>
+                            </div>
+                        
+    
+                    </article>
+                </section>
+    
+            
+    
+            <section class="main-section" id="Catch">
+                <header>Catch</header>
+                
+                <article>
+    
+                    <p>Catch : Catch block is used to handle the uncertain condition of try block. A try block is always followed by a catch block, which handles the exception that occurs in associated try block.</p>
+                    <br>
+                    <div>
+                        <h3>Catch</h3>
+                        <p>{<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;// statement(s) that handle an exception<br>&nbsp;&nbsp;&nbsp;&nbsp;// examples, closing a connection, closing <br>&nbsp;&nbsp;&nbsp;&nbsp;// file, exiting the process after writing <br>&nbsp;&nbsp;&nbsp;&nbsp;// details to a log file. <br> }</p>
+                    </div>
+    
+                  
+                </article>
+            </section>
+    
+            <section class="main-section" id="Finally">
+                <header>Finally</header>
+    
+                <article>
+                    <p>The finally block in java is used to put important codes such as clean up code e.g. closing the file or closing the connection. <br>The finally block executes whether exception rise or not and whether exception handled or not. A finally contains all the crucial statements regardless of the exception occurs or not.</p>
+
+                    <h3>There are 3 possible cases where finally block can be used:</h3>
+
+                    <div>
+                        <h3>Case 1</h3>
+                        <p>When an exception does not rise : <br><p>In this case, the program runs fine without throwing any exception and finally block execute after the try block.</p></p>
+
+                        
+                        
+                    </div>
+                    <br>
+                    <div>
+                        <h3>Case 2</h3>
+                        <p> When the exception rises and handled by the catch block: <br><p>In this case, the program throws an exception but handled by the catch block, and finally block executes after the catch block.</p></p>
+                    </div>
+                    <br>
+                    <div>
+                        <h3>Case 3</h3>
+                        <p>When exception rise and not handled by the catch block  : <br><p>In this case, the program throws an exception but not handled by catch so finally block execute after the try block and after the execution of finally block program terminate abnormally, But finally block execute fine.</p></p>
+                    </div>
+                 
+                </article>
+            
+            </section>
+    
+            <section class="main-section" id="Throw">
+                <header>Throw</header>
+    
+                <article>
+                    <p>
+                        The throw keyword is used inside a function.It is used when it is required to throw an Exception logically.<br>
+                        It can throw only one exception at a time.
+                    </p>
+                    <br>
+                    <div>
+                        <h3>Throw Syntax</h3>
+                        <p>{<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;//throw Instance <br>&nbsp;&nbsp;&nbsp;&nbsp;// Example:<br>&nbsp;&nbsp;&nbsp;&nbsp;//throw new ArithmeticException("/ by zero");  <br>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+                    </div>
+                </article>
+            </section>
+            <section class="main-section" id="Throws">
+                <header>Throws</header>
+    
+                <article>
+                    <p>
+                        Throws is a keyword in Java which is used in the signature of method to indicate that this method might throw one of the listed type exceptions.<br>
+                        The caller to these methods has to handle the exception using a try-catch block. <br>
+                        We can use throws keyword to delegate the responsibility of exception handling to the caller (It may be a method or JVM) then caller method is responsible to handle that exception.  
+                     
+                    </p>
+                    <br>
+        
+                    <div>
+                        <h3>Throws Syntax</h3>
+                        <p>{<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;//type method_name(parameters) throws exception_list <br>&nbsp;&nbsp;&nbsp;&nbsp;//exception_list is a comma separated list of all the 
+                            exceptions which a method might throw.<br>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+                    </div>
+                </article>
+            </section>
+           
+            <section class="main-section" id="USD_Exceptions">
+                <header>User Defined Expression</header>
+    
+                <article>
+                    <p>
+                        An exception is an issue (run time error) that occurred during the execution of a program. When an exception occurred the program gets terminated abruptly and, the code past the line that generated the exception never gets executed.<br>
+                        Java provides us the facility to create our own exceptions which are basically derived classes of Exception. Creating our own Exception is known as a custom exception or user-defined exception.<br>
+                        In order to create a custom exception, we need to extend the Exception class that belongs to <b>java.lang package.</b> 
+                    </p>
+                    <br>
+                    <div>
+                        <h3>User Defined Expression Example</h3>
+                        <p>{<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;class MyException extends Exception { <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public MyException(String s)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{  <br>&nbsp;&nbsp;&nbsp;&nbsp;super(s) <br>&nbsp;&nbsp;&nbsp;&nbsp;public class Main {<br>&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String args[])<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;try {<br>&nbsp;&nbsp;&nbsp;&nbsp;throw new MyException("Sameer");<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;catch (MyException ex) {<br>&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Exception Caught");<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+                    </div>
+                </article>
+            </section>
+            <section class="main-section " id="About_Us">
+                <header>ABOUT-US</header>
+    
+                <article>
+                    <p>
+                       This Web Page was developed by:
+                     
+                    </p>
+                    <br>
+        
+                    <div>
+                        <h3>Group Participants Name</h3>
+                        <p><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<b>Yuvraj Singh (20051190)</b> <br>&nbsp;&nbsp;&nbsp;&nbsp;<b>Sameer Dash (20051160)</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>Aishwaya (20051125)</b> <br>&nbsp;&nbsp;&nbsp;&nbsp;<b>Aditi Sinha (20051123)</b></p>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </article>
+            </section>
+    
+        </div>
+    </div>
+</body>
+</html>
